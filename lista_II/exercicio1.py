@@ -1,0 +1,25 @@
+# 1. Integração: Operadores + Condicionais:
+# Exercício: Peça ao usuário seu peso (kg) e altura (m). Calcule o IMC (peso/altura2
+# ).
+# Em seguida, utilize uma estrutura if/elif/else para exibir a classificação:
+# • Menor que 18.5: Abaixo do peso
+# • Entre 18.5 e 24.9: Peso normal
+# • Entre 25.0 e 29.9: Sobrepeso
+# • 30.0 ou mais: Obesidade
+# Dica: Use operadores de comparação encadeados (ex: 18.5 <= imc < 25).
+
+peso = float(input("Digite seu peso: "))
+altura = float(input("Digite sua altura em metros: "))
+
+imc = peso / altura ** 2
+
+if (imc < 18.5):
+    print(f"Abaixo do peso {imc:.2f}")
+elif (imc >= 18.5 and imc <= 24.9):
+    print(f"Peso normal {imc:.2f}")
+elif (imc >= 25.0 and imc <= 29.9):
+    print(f"Sobrepeso {imc:.2f}")
+elif (imc >= 30.0):
+    print(f"Obesidade {imc:.2f}")
+else:
+    print(f"IMC inválido {imc:.2f}")
